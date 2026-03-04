@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="/favicon.png">
+
+    <!-- <link href="/src/output.css" rel="stylesheet"> -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <!-- Remove when indexing -->
+    <meta name="robots" content="noindex, nofollow">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="">
+        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+                <a href="/index.html" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Kaimuki Digital</span>
+                    <img src="/assets/images/logos/logo_light.webp" alt="Kaimuki Digital logo" class="h-8 w-auto" />
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Open main menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <el-popover-group class="hidden lg:flex lg:gap-x-12">
+                <!-- Services Dropdown -->
+                <div class="relative">
+                    <button popovertarget="desktop-menu-service"
+                        class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+                        Services
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="size-5 flex-none text-gray-400">
+                            <path
+                                d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <el-popover id="desktop-menu-service" anchor="bottom" popover
+                        class="w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                        <div class="p-4">
+                            <div
+                                class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                <div
+                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-auto">
+                                    <a href="/services/web-design/index.html" class="block font-semibold text-gray-900">
+                                        Web Design & Development
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                    <p class="mt-1 text-gray-600">Create a modern website</p>
+                                </div>
+                            </div>
+                            <div
+                                class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                <div
+                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                                    </svg>
+                                </div>
+                                <div class="flex-auto">
+                                    <a href="/services/branding/index.html" class="block font-semibold text-gray-900">
+                                        Logo Design & Branding
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                    <p class="mt-1 text-gray-600">Create a memerable brand</p>
+                                </div>
+                            </div>
+                            <div
+                                class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                <div
+                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                                    </svg>
+                                </div>
+                                <div class="flex-auto">
+                                    <a href="/services/seo/index.html" class="block font-semibold text-gray-900">
+                                        SEO Services
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                    <p class="mt-1 text-gray-600">Boost your visibility and reach more people</p>
+                                </div>
+                            </div>
+                            <div
+                                class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                <div
+                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-auto">
+                                    <a href="/services/digital-tools/index.html"
+                                        class="block font-semibold text-gray-900">
+                                        Digital Tools & APIs
+                                        <span class="absolute inset-0"></span>
+                                    </a>
+                                    <p class="mt-1 text-gray-600">Automate any task for your business</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                            <a href="/contact/get-quote/index.html"
+                                class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                                Request a Quote
+                            </a>
+                            <a href="tel:+13085297120"
+                                class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                    class="size-5 flex-none text-gray-400">
+                                    <path
+                                        d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                                        clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                                Call Us Directly
+                            </a>
+                        </div>
+                    </el-popover>
+                </div>
+                <a href="/about/index.html" class="text-sm/6 font-semibold text-gray-900">About</a>
+                <a href="/contact/support/index.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
+            </el-popover-group>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="/contact/get-quote/index.html" class="text-sm/6 font-semibold text-gray-900">Free Quote
+                    <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="/index.html" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Your Company</span>
+                                <img src="/assets/images/logos/logo_light.webp" alt="Kaimuki Digital Logo"
+                                    class="h-8 w-auto" />
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <div class="-mx-3">
+                                        <button type="button" command="--toggle" commandfor="services"
+                                            class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                                            Services
+                                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
+                                                aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
+                                                <path
+                                                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                                    clip-rule="evenodd" fill-rule="evenodd" />
+                                            </svg>
+                                        </button>
+                                        <el-disclosure id="services" hidden class="mt-2 block space-y-2">
+                                            <a href="/services/web-design/index.html"
+                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Web
+                                                Design & Development</a>
+                                            <a href="/services/branding/index.html"
+                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Logo
+                                                Design & Branding</a>
+                                            <a href="/services/seo/index.html"
+                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">SEO
+                                                Services</a>
+                                            <a href="/services/digital-tools/index.html"
+                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Digital
+                                                Tools & APIs</a>
+                                        </el-disclosure>
+                                    </div>
+                                    <a href="/about/index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About
+                                        Us</a>
+                                    <a href="/contact/support/index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="/contact/get-quote/index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Request
+                                        a Quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+
+    <!-- Content -->
+    <div class="bg-white px-6 py-32 lg:px-8 dark:bg-gray-900">
+        <div class="mx-auto max-w-3xl text-base/7 text-gray-700 dark:text-gray-300">
+            <div class="mt-10 max-w-2xl text-gray-600 dark:text-gray-400">
+                <h1
+                    class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
+                    Privacy, Terms, & Legal Notices</h1>
+
+                <p class="pt-4"><strong>Effective Date: February 23,
+                        2026</strong><strong><br></strong><strong>Website:
+                        kaimukidigital.com</strong></p>
+
+                <hr class="mt-4">
+
+                <h2 class="mt-16 text-3xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Important Notice</h2>
+
+                <p class="pt-4">Kaimuki Digital Agency LLC provides web design, development, digital systems, and
+                    technical
+                    services only. We are not attorneys and do not provide legal advice, legal review, or legal
+                    compliance services.</p>
+
+                <p class="pt-4">The creation, accuracy, and compliance of Privacy Policies, Terms of Service, Cookie
+                    Policies,
+                    or any other legal documentation on client websites are solely the responsibility of the client.
+                    By engaging our services, clients acknowledge that Kaimuki Digital is not responsible for the
+                    legal content, regulatory compliance, or ongoing accuracy of any website legal
+                    documentation.</p>
+
+                <p class="pt-4">Clients are strongly encouraged to consult a qualified legal professional to ensure all
+                    legal
+                    pages comply with applicable local, state, national, and international laws.</p>
+
+                <hr class="mt-4">
+
+                <h2 class="mt-16 text-3xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Privacy Policy</h2>
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white
+">Overview</h3>
+
+                <p class="pt-4">Kaimuki Digital Agency LLC (“we,” “our,” or “us”) respects your privacy and is committed
+                    to
+                    protecting personal information collected through this website.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white
+">Information We Collect</h3>
+
+                <p class="pt-4">We may collect personal information you submit, including:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Name</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Email address</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Phone number</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Business information</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Details submitted through contact forms</li>
+                </ul>
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white
+">Automatically Collected Information</h3>
+
+                <p class="pt-4">We may collect limited technical data such as:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Browser type</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Device type</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">IP address</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Pages visited</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Basic analytics data</li>
+                </ul>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">How We
+                    Use Your Information</h3>
+
+                <p class="pt-4">We use collected information to:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Respond to inquiries</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Provide requested services</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Communicate with you</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Improve website functionality and performance</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Maintain security and prevent abuse</li>
+                </ul>
+
+                <p class="pt-4">We do not sell, rent, or trade personal information.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Third-Party Services</h3>
+
+                <p class="pt-4">We use trusted third-party service providers to operate our website and business. These
+                    providers may process limited personal data strictly as necessary to perform their
+                    services.</p>
+
+                <p class="pt-4">These may include:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Form processing services (such as Formspree)</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Hosting providers</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Analytics services (such as Google Analytics)</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Payment processors</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Technical infrastructure providers</li>
+                </ul>
+
+                <p class="pt-4">Third-party providers process data in accordance with their own privacy policies. We
+                    encourage
+                    users to review those policies.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Cookies
+                    &amp; Tracking Technologies</h3>
+
+                <p class="pt-4">We use cookies and similar technologies for:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Website functionality</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Performance monitoring</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Traffic analytics</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">User experience improvements</li>
+                </ul>
+
+                <p class="pt-4">You may control or disable cookies through your browser settings. Disabling cookies may
+                    affect
+                    website functionality.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Data
+                    Security</h3>
+
+                <p class="pt-4">We implement reasonable administrative and technical safeguards to protect personal
+                    information.
+                    However, no online transmission or storage system can be guaranteed 100% secure.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Your
+                    Rights</h3>
+
+                <p class="pt-4">Depending on your jurisdiction, you may have the right to:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Request access to your personal data</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Request correction or deletion</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Withdraw consent where applicable</li>
+                </ul>
+
+                <p class="pt-4">Requests may be submitted
+                    to:<br><strong>info@kaimukidigital.com</strong></p>
+
+                <hr class="mt-4">
+
+                <h2 class="mt-16 text-3xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white"
+                    id="#terms-of-service">Terms of Service</h2>
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Acceptance of Terms</h3>
+
+                <p class="pt-4">By accessing or using this website, you agree to these Terms of Service. If you do not
+                    agree,
+                    you should not use this website.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Website
+                    Use</h3>
+
+                <p class="pt-4">This website is provided for informational and business purposes. You agree to use the
+                    site
+                    lawfully and not engage in activities that:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Damage or disrupt website functionality</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Attempt unauthorized access</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Interfere with security features</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Violate applicable laws</li>
+                </ul>
+
+                <p class="pt-4">Unauthorized use is strictly prohibited.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Intellectual Property</h3>
+
+                <p class="pt-4">All website content, including text, graphics, branding, design elements, layouts, and
+                    materials, is the property of Kaimuki Digital Agency LLC unless otherwise stated.</p>
+
+                <p class="pt-4">Content may not be copied, reproduced, distributed, modified, or used without prior
+                    written
+                    permission.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Service
+                    Information</h3>
+
+                <p class="pt-4">Descriptions of services, pricing, features, and timelines are provided for general
+                    informational purposes only and do not constitute a binding agreement.</p>
+
+                <p class="pt-4">Final scope, deliverables, timelines, and responsibilities are defined in separate
+                    written
+                    client agreements or proposals.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Client
+                    Responsibilities</h3>
+
+                <p class="pt-4">Clients agree to provide accurate information, necessary content, access credentials,
+                    and timely
+                    approvals required for project completion.</p>
+
+                <p class="pt-4">Kaimuki Digital is not responsible for delays, performance issues, or outcomes resulting
+                    from
+                    incomplete materials, inaccurate information, or lack of cooperation.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Pricing
+                    &amp; Fees</h3>
+
+                <p class="pt-4">Pricing displayed on this website is for general reference and may change at any time.
+                </p>
+
+                <p class="pt-4">Hosting, maintenance, or recurring service fees may be modified with reasonable notice
+                    when
+                    applicable.</p>
+
+                <p class="pt-4">Specific payment terms and refund policies are governed by individual client agreements.
+                </p>
+
+                <p class="pt-4">Unless otherwise agreed in writing, completed work and active services are
+                    non-refundable.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Third-Party Services &amp; Integrations</h3>
+
+                <p class="pt-4">Our services may involve third-party tools, platforms, APIs, hosting providers, or
+                    software. We
+                    are not responsible for outages, errors, pricing changes, policy updates, or failures
+                    originating from third-party providers.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">No
+                    Guarantees</h3>
+
+                <p class="pt-4">We do not guarantee specific results, including but not limited to:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Search engine rankings</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Website traffic</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Lead generation</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Revenue growth</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Performance metrics</li>
+                </ul>
+
+                <p class="pt-4">Results depend on numerous external factors beyond our control.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Limitation of Liability</h3>
+
+                <p class="pt-4">To the fullest extent permitted by law, Kaimuki Digital Agency LLC shall not be liable
+                    for:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Indirect or consequential damages</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Loss of profits, revenue, or data</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Business interruption</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Reliance on website content</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Issues caused by third-party services</li>
+                </ul>
+
+                <p class="pt-4">Use of this website and our services is at your own risk.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">External
+                    Links</h3>
+
+                <p class="pt-4">This website may contain links to third-party websites. We do not control and are not
+                    responsible for the content, policies, or practices of those sites.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Governing Law</h3>
+
+                <p class="pt-4">These Terms are governed by the laws of the State of Hawaii, United States. Any disputes
+                    shall
+                    be resolved in the courts located in Honolulu, Hawaii.</p>
+
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Modifications</h3>
+
+                <p class="pt-4">We reserve the right to update or modify website content, services, pricing, or these
+                    Terms at
+                    any time. Continued use of the website constitutes acceptance of any revisions.</p>
+
+                <hr class="mt-4">
+
+                <h2 class="mt-16 text-3xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">
+                    Disclaimer</h2>
+
+                <p class="pt-4">The information provided on this website is for general informational purposes only.</p>
+
+                <p class="pt-4">We do not provide legal, financial, tax, or professional advice. Users should consult
+                    qualified
+                    professionals before making decisions based on website content.</p>
+
+                <p class="pt-4">Kaimuki Digital is not liable for damages arising from:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Use of the website</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Use of our services</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Reliance on website content</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Service interruptions or downtime</li>
+                </ul>
+                <hr class="mt-4">
+
+                <h3 class="mt-8 text-xl font-semibold tracking-tight text-pretty text-gray-900 dark:text-white">Credits
+                </h3>
+
+                <p class="pt-4">We respect the intellectual property of creators whose tools and assets contribute to
+                    our
+                    services.</p>
+
+                <p class="pt-4">Portions of this website may incorporate licensed:</p>
+
+                <ul>
+                    <li class="list-disc list-inside ml-6 space-y-2">Templates or UI components</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Illustrations or graphics</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Fonts and typography</li>
+                    <li class="list-disc list-inside ml-6 space-y-2">Stock photography</li>
+                </ul>
+
+                <p class="pt-4">All third-party assets are used in accordance with applicable licensing terms.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <img src="/assets/images/logos/Logo_Website_Dark.webp" alt="Kaimuki Digital Logo" class="h-9" />
+                    <p class="text-sm/6 text-balance text-gray-400">Built for Hawaii Businesses</p>
+                    <!-- Social Links -->
+                    <!-- <div class="flex gap-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Facebook</span>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Instagram</span>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
+                                <path
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm/6 font-semibold text-white">Services</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/services/web-design/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Website Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/branding/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Logo Design & Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/services/seo/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">SEO & Visibility</a>
+                                </li>
+                                <li>
+                                    <a href="/services/digital-tools/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Digital Tools & APIs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm/6 font-semibold text-white">Support</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/contact/get-quote/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Request a Quote</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/support/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm/6 font-semibold text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/about/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">About</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#" class="text-sm/6 text-gray-400 hover:text-gray-300">Blog</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm/6 font-semibold text-white">Legal</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/legal/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="/legal/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Terms
+                                        of service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-sm/6 text-gray-400">
+                    &copy; <span id="year"></span> Kaimuki Digital. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

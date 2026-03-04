@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+
+    <!-- <link href="/src/output.css" rel="stylesheet"> -->
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <!-- Remove when indexing -->
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+
+    <!-- Header & Hero -->
+    <div class="bg-white">
+        <div class="relative isolate overflow-hidden">
+            <!-- Header -->
+            <header class="">
+                <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+                    <div class="flex lg:flex-1">
+                        <a href="/index.html" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Kaimuki Digital</span>
+                            <img src="/assets/images/logos/logo_light.webp" alt="Kaimuki Digital logo"
+                                class="h-8 w-auto" />
+                        </a>
+                    </div>
+                    <div class="flex lg:hidden">
+                        <button type="button" command="show-modal" commandfor="mobile-menu"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                            <span class="sr-only">Open main menu</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <el-popover-group class="hidden lg:flex lg:gap-x-12">
+                        <!-- Services Dropdown -->
+                        <div class="relative">
+                            <button popovertarget="desktop-menu-service"
+                                class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+                                Services
+                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                    class="size-5 flex-none text-gray-400">
+                                    <path
+                                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                        clip-rule="evenodd" fill-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <el-popover id="desktop-menu-service" anchor="bottom" popover
+                                class="w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg outline-1 outline-gray-900/5 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                                <div class="p-4">
+                                    <div
+                                        class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                        <div
+                                            class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor"
+                                                class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-auto">
+                                            <a href="/services/web-design/index.html"
+                                                class="block font-semibold text-gray-900">
+                                                Web Design & Development
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600">Create a modern website</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                        <div
+                                            class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor"
+                                                class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-auto">
+                                            <a href="/services/branding/index.html"
+                                                class="block font-semibold text-gray-900">
+                                                Logo Design & Branding
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600">Create a memerable brand</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                        <div
+                                            class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor"
+                                                class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-auto">
+                                            <a href="/services/seo/index.html"
+                                                class="block font-semibold text-gray-900">
+                                                SEO Services
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600">Boost your visibility and reach more people
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                                        <div
+                                            class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor"
+                                                class="size-6 text-gray-600 group-hover:text-indigo-600">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="flex-auto">
+                                            <a href="/services/digital-tools/index.html"
+                                                class="block font-semibold text-gray-900">
+                                                Digital Tools & APIs
+                                                <span class="absolute inset-0"></span>
+                                            </a>
+                                            <p class="mt-1 text-gray-600">Automate any task for your business</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                                    <a href="/contact/get-quote/index.html"
+                                        class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                                        Request a Quote
+                                    </a>
+                                    <a href="tel:+13085297120"
+                                        class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
+                                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                                            class="size-5 flex-none text-gray-400">
+                                            <path
+                                                d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z"
+                                                clip-rule="evenodd" fill-rule="evenodd" />
+                                        </svg>
+                                        Call Us Directly
+                                    </a>
+                                </div>
+                            </el-popover>
+                        </div>
+                        <a href="/about/index.html" class="text-sm/6 font-semibold text-gray-900">About</a>
+                        <a href="/contact/support/index.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
+                    </el-popover-group>
+                    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                        <a href="/contact/get-quote/index.html" class="text-sm/6 font-semibold text-gray-900">Free Quote
+                            <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </nav>
+                <el-dialog>
+                    <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                            <el-dialog-panel
+                                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                                <div class="flex items-center justify-between">
+                                    <a href="/index.html" class="-m-1.5 p-1.5">
+                                        <span class="sr-only">Your Company</span>
+                                        <img src="/assets/images/logos/logo_light.webp" alt="Kaimuki Digital Logo"
+                                            class="h-8 w-auto" />
+                                    </a>
+                                    <button type="button" command="close" commandfor="mobile-menu"
+                                        class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                        <span class="sr-only">Close menu</span>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                            data-slot="icon" aria-hidden="true" class="size-6">
+                                            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="mt-6 flow-root">
+                                    <div class="-my-6 divide-y divide-gray-500/10">
+                                        <div class="space-y-2 py-6">
+                                            <div class="-mx-3">
+                                                <button type="button" command="--toggle" commandfor="services"
+                                                    class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                                                    Services
+                                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon"
+                                                        aria-hidden="true"
+                                                        class="size-5 flex-none in-aria-expanded:rotate-180">
+                                                        <path
+                                                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                                                            clip-rule="evenodd" fill-rule="evenodd" />
+                                                    </svg>
+                                                </button>
+                                                <el-disclosure id="services" hidden class="mt-2 block space-y-2">
+                                                    <a href="/services/web-design/index.html"
+                                                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Web
+                                                        Design & Development</a>
+                                                    <a href="/services/branding/index.html"
+                                                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Logo
+                                                        Design & Branding</a>
+                                                    <a href="/services/seo/index.html"
+                                                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">SEO
+                                                        Services</a>
+                                                    <a href="/services/digital-tools/index.html"
+                                                        class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Digital
+                                                        Tools & APIs</a>
+                                                </el-disclosure>
+                                            </div>
+                                            <a href="/about/index.html"
+                                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About
+                                                Us</a>
+                                            <a href="/contact/support/index.html"
+                                                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact</a>
+                                        </div>
+                                        <div class="py-6">
+                                            <a href="/contact/get-quote/index.html"
+                                                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Request
+                                                a Quote</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </el-dialog-panel>
+                        </div>
+                    </dialog>
+                </el-dialog>
+            </header>
+
+            <!-- Hero -->
+            <img src="/assets/images/branding/branding-hero-mobile.webp"
+                alt="Mobile hero image showcasing Kaimuki Digital branding services for Oahu businesses"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-10" />
+            <div aria-hidden="true"
+                class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75">
+                </div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+                        <div
+                            class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                            Limited project slots available. <a href="#" class="font-semibold text-indigo-600"><span
+                                    aria-hidden="true" class="absolute inset-0"></span>Contact us <span
+                                    aria-hidden="true">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+                            Professional Logos and Branding for Oahu Businesses</h1>
+                        <p class="mt-8 text-lg text-pretty text-gray-600 sm:text-xl/8">We craft unique,
+                            memorable brands that help businesses of all sizes stand out in Oahu’s competitive market.
+                        </p>
+                        <div class="mt-10 flex items-center justify-center gap-x-6">
+                            <a href="#"
+                                class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Request
+                                a Quote</a>
+                            <a href="#" class="text-sm/6 font-semibold text-gray-900">About us <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div aria-hidden="true"
+                class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="relative left-[calc(50%+3rem)] aspect-1155/678 w-144.5 -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-288.75">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class="mx-auto max-w-7xl lg:flex lg:justify-between lg:px-8 pt-16">
+        <div class="hidden lg:flex lg:w-1/2 lg:shrink lg:grow-0 xl:inset-y-0 xl:right-1/2 xl:w-1/2">
+            <div class="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
+                <img src="/assets/images/branding/branding-feature.webp"
+                    alt="Example of a cohesive brand identity designed by Kaimuki Digital, including logo, color palette, and visual elements."
+                    class="absolute inset-0 size-full bg-gray-50 object-cover" />
+            </div>
+        </div>
+        <div class="px-6 lg:contents">
+            <div
+                class="mx-auto max-w-2xl pt-16 pb-24 sm:pt-20 sm:pb-32 lg:mr-0 lg:ml-8 lg:w-full lg:max-w-lg lg:flex-none lg:pt-32 xl:w-1/2">
+                <p class="text-base/7 font-semibold text-indigo-600">Oahu Businesses</p>
+                <h2 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Your Brand
+                    Is a Valuable Business Asset</h2>
+                <div class="mt-10 max-w-xl text-base/7 text-gray-600 lg:max-w-none">
+                    <p class="text-lg">Your brand is more than just a logo — it’s a strategic asset that communicates your values,
+                        builds trust, and drives growth. We design cohesive brand identities that work across all
+                        platforms, helping your business stand out, attract customers, and grow over time.</p>
+                    <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                        <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mt-1 size-5 flex-none text-indigo-600">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span><strong class="font-semibold text-gray-900">Discovery & Strategy.</strong> We learn
+                                about your business, audience, and goals to define a brand that truly represents
+                                you.</span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mt-1 size-5 flex-none text-indigo-600">
+                                <path
+                                    d="M12.378 1.602a.75.75 0 0 0-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03ZM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 0 0 .372-.648V7.93ZM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 0 0 .372.648l8.628 5.033Z" />
+                            </svg>
+                            <span><strong class="font-semibold text-gray-900">Visual Identity Design.</strong> Next, we
+                                create logos, typography, and color systems that communicate your brand clearly and
+                                memorably. </span>
+                        </li>
+                        <li class="flex gap-x-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mt-1 size-5 flex-none text-indigo-600">
+                                <path fill-rule="evenodd"
+                                    d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span><strong class="font-semibold text-gray-900">Brand Guidelines & Assets.</strong>
+                                We produce a cohesive set of assets and guidelines so your brand looks consistent across
+                                every channel.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pricing -->
+    <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div aria-hidden="true" class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl">
+            <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                class="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30">
+            </div>
+        </div>
+        <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
+            <p class="mt-2 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">Pricing
+                Examples for Your Project</p>
+        </div>
+        <p class="mx-auto mt-6 max-w-2xl text-center text-lg text-pretty text-gray-600 sm:text-xl/8">Every
+            logo and branding project is unique, so pricing can vary. The examples below give a general idea — final
+            costs depend on your brand’s needs and complexity.</p>
+        <div
+            class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
+            <div
+                class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-tr-none lg:rounded-bl-3xl">
+                <h3 id="tier-hobby" class="text-base/7 font-semibold text-indigo-600">Basic Logo Package</h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-base text-gray-500">from</span>
+                    <span class="text-5xl font-semibold tracking-tight text-gray-900">$349</span>
+                </p>
+                <p class="mt-6 text-base/7 text-gray-600">Ideal for new businesses and startups looking to make a
+                    memorable first impression.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-600">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        1 initial logo concept
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-600">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Multiple revision rounds
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-600">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        High-resolution files & vector files
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-600">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Typically delivered within 5-7 business days
+                    </li>
+                </ul>
+                <a href="#" aria-describedby="tier-hobby"
+                    class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 inset-ring inset-ring-indigo-200 hover:inset-ring-indigo-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get
+                    started today</a>
+            </div>
+            <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
+                <h3 id="tier-enterprise" class="text-base/7 font-semibold text-indigo-400">Logo & Branding Package</h3>
+                <p class="mt-4 flex items-baseline gap-x-2">
+                    <span class="text-base text-gray-400">from</span>
+                    <span class="text-5xl font-semibold tracking-tight text-white">$699</span>
+                </p>
+                <p class="mt-6 text-base/7 text-gray-300">Ideal for growing businesses looking for a complete brand
+                    identity. Get a logo plus the visual tools you need to stand out confidently.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10">
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Everything included in Basic Logo Package
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Additional logo concept
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Full logo variation set
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Social media assets
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Business card design
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Brand style guide
+                    </li>
+                    <li class="flex gap-x-3">
+                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="h-6 w-5 flex-none text-indigo-400">
+                            <path
+                                d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+                                clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                        Brand patterns & graphic elements
+                    </li>
+                </ul>
+                <a href="#" aria-describedby="tier-enterprise"
+                    class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Get
+                    started today</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-white dark:bg-gray-900">
+        <div class="px-6 py-24 sm:py-32 lg:px-8">
+            <div class="mx-auto max-w-2xl text-center">
+                <h2
+                    class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl dark:text-white">
+                    Let's make your business unforgettable.</h2>
+                <p class="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600 dark:text-gray-300">We’ll help you
+                    bring your ideas to life and grow your
+                    Oahu business online.</p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="#"
+                        class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:shadow-none dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">Request
+                        a Quote</a>
+                    <a href="#" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Support center <span
+                            aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="bg-white dark:bg-gray-900">
+        <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+            <div class="mx-auto max-w-4xl">
+                <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
+                    Frequently
+                    asked questions</h2>
+                <dl class="mt-16 divide-y divide-gray-900/10 dark:divide-white/10">
+                    <div class="py-6 first:pt-0 last:pb-0">
+                        <dt>
+                            <button type="button" command="--toggle" commandfor="faq-0"
+                                class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white">
+                                <span class="text-base/7 font-semibold">What is included in your logo and branding
+                                    services?</span>
+                                <span class="ml-6 flex h-7 items-center">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <el-disclosure id="faq-0" class="contents">
+                            <dd class="mt-2 pr-12">
+                                <p class="text-base/7 text-gray-600 dark:text-gray-400">Our projects typically include
+                                    logo design, color palettes, typography recommendations, and ready-to-use brand
+                                    assets. For full branding packages, we also provide logo variations, social media
+                                    graphics, and a simple brand style guide to keep everything consistent.</p>
+                            </dd>
+                        </el-disclosure>
+                    </div>
+                    <div class="py-6 first:pt-0 last:pb-0">
+                        <dt>
+                            <button type="button" command="--toggle" commandfor="faq-2"
+                                class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white">
+                                <span class="text-base/7 font-semibold">Can you redesign or improve my existing
+                                    logo?</span>
+                                <span class="ml-6 flex h-7 items-center">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <el-disclosure id="faq-2" hidden class="contents">
+                            <dd class="mt-2 pr-12">
+                                <p class="text-base/7 text-gray-600 dark:text-gray-400">Yes! Many of our clients already
+                                    have a logo but want something more polished or modern. We can refine your current
+                                    design or create a fresh new direction while keeping the parts of your brand that
+                                    matter to you.</p>
+                            </dd>
+                        </el-disclosure>
+                    </div>
+                    <div class="py-6 first:pt-0 last:pb-0">
+                        <dt>
+                            <button type="button" command="--toggle" commandfor="faq-5"
+                                class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white">
+                                <span class="text-base/7 font-semibold">How involved will I be in the design
+                                    process?</span>
+                                <span class="ml-6 flex h-7 items-center">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <el-disclosure id="faq-5" hidden class="contents">
+                            <dd class="mt-2 pr-12">
+                                <p class="text-base/7 text-gray-600 dark:text-gray-400">We value collaboration. You’ll
+                                    provide feedback at key stages: initial concept & design mockups. The more input you
+                                    provide, the better your brand reflects your Hawaii
+                                    business.</p>
+                            </dd>
+                        </el-disclosure>
+                    </div>
+                    <div class="py-6 first:pt-0 last:pb-0">
+                        <dt>
+                            <button type="button" command="--toggle" commandfor="faq-6"
+                                class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white">
+                                <span class="text-base/7 font-semibold">How long does the design process take?</span>
+                                <span class="ml-6 flex h-7 items-center">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+                                        <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+                                        <path d="M18 12H6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </dt>
+                        <el-disclosure id="faq-6" hidden class="contents">
+                            <dd class="mt-2 pr-12">
+                                <p class="text-base/7 text-gray-600 dark:text-gray-400">Timelines vary based on project
+                                    scope and feedback, but most logo designs are completed within 1-2 weeks. Larger
+                                    branding packages take longer to ensure every detail is thoughtfully developed.
+                                    We’ll always keep you updated along the way.</p>
+                            </dd>
+                        </el-disclosure>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <img src="/assets/images/logos/Logo_Website_Dark.webp" alt="Kaimuki Digital Logo" class="h-9" />
+                    <p class="text-sm/6 text-balance text-gray-400">Built for Hawaii Businesses</p>
+                    <!-- Social Links -->
+                    <!-- <div class="flex gap-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Facebook</span>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Instagram</span>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
+                                <path
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div> -->
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm/6 font-semibold text-white">Services</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/services/web-design/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Website Development</a>
+                                </li>
+                                <li>
+                                    <a href="/services/branding/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Logo Design & Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/services/seo/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">SEO & Visibility</a>
+                                </li>
+                                <li>
+                                    <a href="/services/digital-tools/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Digital Tools & APIs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm/6 font-semibold text-white">Support</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/contact/get-quote/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Request a Quote</a>
+                                </li>
+                                <li>
+                                    <a href="/contact/support/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm/6 font-semibold text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/about/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">About</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#" class="text-sm/6 text-gray-400 hover:text-gray-300">Blog</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm/6 font-semibold text-white">Legal</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="/legal/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="/legal/index.html"
+                                        class="text-sm/6 text-gray-400 hover:text-gray-300">Terms
+                                        of service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-sm/6 text-gray-400">
+                    &copy; <span id="year"></span> Kaimuki Digital. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

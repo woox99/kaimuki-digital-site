@@ -1,0 +1,7 @@
+# Ignore Node dependencies
+node_modules/
+
+# Ignore generated CSS in source folder
+src/output.css
+
+.DS_Store
