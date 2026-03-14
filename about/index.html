@@ -18,8 +18,36 @@
 
 <body>
 
+    <!-- Banner -->
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
+        id="banner">
+        <div aria-hidden="true"
+            class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+            <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
+                class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+        </div>
+        <div aria-hidden="true"
+            class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
+            <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
+                class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p class="text-sm/6 text-gray-900">
+                <strong class="font-semibold">Starting a New Business?</strong><svg viewBox="0 0 2 2" aria-hidden="true"
+                    class="mx-2 inline size-0.5 fill-current">
+                    <circle r="1" cx="1" cy="1" />
+                </svg>Limited project slots available.
+            </p>
+            <a href="/contact/get-quote"
+                class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Let's
+                Talk <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="">
+    <header>
         <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
             <div class="flex lg:flex-1">
                 <a href="/index.html" class="-m-1.5 p-1.5">
@@ -66,7 +94,7 @@
                                     </svg>
                                 </div>
                                 <div class="flex-auto">
-                                    <a href="/services/web-design/index.html" class="block font-semibold text-gray-900">
+                                    <a href="/index.html" class="block font-semibold text-gray-900">
                                         Web Design & Development
                                         <span class="absolute inset-0"></span>
                                     </a>
@@ -86,10 +114,10 @@
                                 </div>
                                 <div class="flex-auto">
                                     <a href="/services/branding/index.html" class="block font-semibold text-gray-900">
-                                        Logo Design & Branding
+                                        Branding & Logo Design
                                         <span class="absolute inset-0"></span>
                                     </a>
-                                    <p class="mt-1 text-gray-600">Create a memerable brand</p>
+                                    <p class="mt-1 text-gray-600">Create a memorable brand</p>
                                 </div>
                             </div>
                             <div
@@ -105,30 +133,10 @@
                                 </div>
                                 <div class="flex-auto">
                                     <a href="/services/seo/index.html" class="block font-semibold text-gray-900">
-                                        SEO Services
+                                        SEO & Local visibility
                                         <span class="absolute inset-0"></span>
                                     </a>
                                     <p class="mt-1 text-gray-600">Boost your visibility and reach more people</p>
-                                </div>
-                            </div>
-                            <div
-                                class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
-                                <div
-                                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor"
-                                        class="size-6 text-gray-600 group-hover:text-indigo-600">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-                                    </svg>
-                                </div>
-                                <div class="flex-auto">
-                                    <a href="/services/digital-tools/index.html"
-                                        class="block font-semibold text-gray-900">
-                                        Digital Tools & APIs
-                                        <span class="absolute inset-0"></span>
-                                    </a>
-                                    <p class="mt-1 text-gray-600">Automate any task for your business</p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +162,7 @@
                 <a href="/contact/support/index.html" class="text-sm/6 font-semibold text-gray-900">Contact</a>
             </el-popover-group>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="/contact/get-quote/index.html" class="text-sm/6 font-semibold text-gray-900">Free Quote
+                <a href="/contact/get-quote/index.html" class="text-sm/6 font-semibold text-gray-900">Pricing
                     <span aria-hidden="true">&rarr;</span></a>
             </div>
         </nav>
@@ -193,7 +201,7 @@
                                             </svg>
                                         </button>
                                         <el-disclosure id="services" hidden class="mt-2 block space-y-2">
-                                            <a href="/services/web-design/index.html"
+                                            <a href="/index.html"
                                                 class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Web
                                                 Design & Development</a>
                                             <a href="/services/branding/index.html"
@@ -201,10 +209,7 @@
                                                 Design & Branding</a>
                                             <a href="/services/seo/index.html"
                                                 class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">SEO
-                                                Services</a>
-                                            <a href="/services/digital-tools/index.html"
-                                                class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Digital
-                                                Tools & APIs</a>
+                                                & Local Visibility</a>
                                         </el-disclosure>
                                     </div>
                                     <a href="/about/index.html"
@@ -226,45 +231,10 @@
         </el-dialog>
     </header>
 
-    <!-- Banner -->
-    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
-        id="banner">
-        <div aria-hidden="true"
-            class="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
-            <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
-                class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
-        </div>
-        <div aria-hidden="true"
-            class="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl">
-            <div style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"
-                class="aspect-577/310 w-144.25 bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"></div>
-        </div>
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <p class="text-sm/6 text-gray-900">
-                <strong class="font-semibold">Starting a New Business?</strong><svg viewBox="0 0 2 2" aria-hidden="true"
-                    class="mx-2 inline size-0.5 fill-current">
-                    <circle r="1" cx="1" cy="1" />
-                </svg>Limited project slots available.
-            </p>
-            <a href="/contact/get-quote"
-                class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Let's
-                Talk <span aria-hidden="true">&rarr;</span></a>
-        </div>
-        <div class="flex flex-1 justify-end">
-        </div>
-    </div>
 
-
+    <!-- Content Section -->
     <div class="relative isolate overflow-hidden bg-white pb-24 sm:pb-32 dark:bg-gray-900">
 
-        <!-- Header Section -->
-        <div class="px-6 py-24 sm:py-32 lg:px-8">
-            <div class="mx-auto max-w-2xl text-center">
-                <h1 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Our Agency</h1>
-                <p class="mt-8 text-lg text-pretty text-gray-500 sm:text-xl/8">Kaimuki Digital was created to help small
-                    and local businesses establish a strong, professional presence online.</p>
-            </div>
-        </div>
 
 
         <!-- Content -->
@@ -275,9 +245,19 @@
             </div>
         </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+            <!-- Header Section -->
+            <div class="px-6 py-24 sm:py-32 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h1 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Our Agency</h1>
+                    <p class="mt-8 text-lg text-pretty text-gray-500 sm:text-xl/8">Kaimuki Digital was created to help
+                        small
+                        and local businesses establish a strong, professional presence online.</p>
+                </div>
+            </div>
+
             <div class="mx-auto max-w-2xl lg:mx-0">
-                <!-- <p class="text-base/7 font-semibold text-indigo-600 dark:text-indigo-400">About Kaimuki Digital</p> -->
-                <h2 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">About us</h2>
+                <h2 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">About us
+                </h2>
                 <p class="mt-6 text-xl/8 text-gray-700 dark:text-gray-300">We focus on building clean,
                     modern websites that not only look great but also serve a real business purpose — attracting
                     customers, building trust, and supporting long-term growth.</p>
@@ -286,7 +266,7 @@
                 class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:mt-10 lg:max-w-none lg:grid-cols-12">
                 <div class="relative lg:order-last lg:col-span-5">
                     <svg aria-hidden="true"
-                        class="absolute -top-160 left-1 -z-10 h-256 w-702 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-gray-900/10 dark:stroke-white/10">
+                        class="hidden lg:flex absolute -top-160 left-1 -z-10 h-256 w-702 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_111.5rem_0%,white,transparent)] stroke-gray-900/10 dark:stroke-white/10">
                         <defs>
                             <pattern id="e87443c8-56e4-4c20-9111-55b82fa704e3" width="200" height="200"
                                 patternUnits="userSpaceOnUse">
@@ -364,14 +344,14 @@
                 <h2
                     class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl dark:text-white">
                     Have a project? <br>Let’s build it together.</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600 dark:text-gray-300">Whether it’s a
-                    website, web application, or digital tool, we’ll help you bring your ideas to life and grow your
-                    Oahu business online. Reach out today to start the conversation.</p>
+                <p class="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-600 dark:text-gray-300">Reach out today
+                    to start the conversation.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#"
+                    <a href="/contact/get-quote"
                         class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:shadow-none dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">Request
                         a Quote</a>
-                    <a href="#" class="text-sm/6 font-semibold text-gray-900 dark:text-white">Support center <span
+                    <a href="/contact/support/index.html"
+                        class="text-sm/6 font-semibold text-gray-900 dark:text-white">Support center <span
                             aria-hidden="true">→</span></a>
                 </div>
             </div>
@@ -480,6 +460,7 @@
             </div>
         </div>
     </footer>
+
     <script src="/assets/js/main.js"></script>
 
 </body>
