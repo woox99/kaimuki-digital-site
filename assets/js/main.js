@@ -7,9 +7,9 @@ if (yearEl) {
 }
 
 // Clear forms on page unload
-window.onbeforeunload = () => {
-    for (const form of document.getElementsByTagName('form')) {
+document.querySelectorAll("form").forEach(form => {
+    form.addEventListener("submit", () => {
         form.reset();
-    }
-};
+    });
+});
 
