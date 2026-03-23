@@ -47,27 +47,35 @@
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Kaimuki Digital",
-        "description": "Get support from Kaimuki Digital for your website, branding, SEO, and digital solutions. Contact our team to resolve issues or get assistance for your Oahu business.",
-        "image": "https://kaimukidigital.com/assets/images/og-image.webp",
-        "@id": "https://kaimukidigital.com/support/",
-        "url": "https://kaimukidigital.com/support/",
-        "areaServed": {
-            "@type": "Place",
-            "name": "Oahu, Hawaii"
-        },
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "WebDesignCompany"],
+    "name": "Kaimuki Digital",
+    "image": "https://kaimukidigital.com/assets/images/og-image.webp",
+    
+    "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Oahu, Hawaii"
+    },
+    "openingHours": "Mo-Su 08:00-22:00",
+    "telephone": "+1-808-400-7177",
+    "priceRange": "$$",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2324 Lime St",
+        "addressLocality": "Honolulu",
+        "addressRegion": "HI",
+        "postalCode": "96826",
+        "addressCountry": "US"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+1-808-400-7177",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2324 Lime St",
-            "addressLocality": "Honolulu",
-            "addressRegion": "HI",
-            "postalCode": "96826",
-            "addressCountry": "US"
-        },
+        "contactType": "customer support"
+    },
+    "serviceType": "Customer Support Services"
+    "description": "Get support from Kaimuki Digital for your website, branding, SEO, and digital solutions. Contact our team to resolve issues or get assistance for your Oahu business.",
+    "@id": "https://kaimukidigital.com/support/",
+    "url": "https://kaimukidigital.com/support/"
     }
     </script>
 
