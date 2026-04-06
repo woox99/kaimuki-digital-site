@@ -3,7 +3,7 @@
 
   <!-- Home page -->
   <url>
-    <loc>https://kaimukidigital.com/</loc>
+    <loc>https://www.kaimukidigital.com/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,14 +11,14 @@
 
   <!-- Services pages -->
   <url>
-    <loc>https://kaimukidigital.com/services/branding/</loc>
+    <loc>https://www.kaimukidigital.com/services/branding/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://kaimukidigital.com/services/seo/</loc>
+    <loc>https://www.kaimukidigital.com/services/seo/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -26,7 +26,7 @@
 
   <!-- Legal -->
   <url>
-    <loc>https://kaimukidigital.com/legal/</loc>
+    <loc>https://www.kaimukidigital.com/legal/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -34,14 +34,14 @@
 
   <!-- Contact pages -->
   <url>
-    <loc>https://kaimukidigital.com/contact/get-quote/</loc>
+    <loc>https://www.kaimukidigital.com/contact/get-quote/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://kaimukidigital.com/contact/support/</loc>
+    <loc>https://www.kaimukidigital.com/contact/support/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -49,7 +49,7 @@
 
   <!-- About -->
   <url>
-    <loc>https://kaimukidigital.com/about/</loc>
+    <loc>https://www.kaimukidigital.com/about/</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
