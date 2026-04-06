@@ -5,6 +5,27 @@
   },
   "scripts": {
     "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  }
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "name": "kaimuki-digital-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woox99/kaimuki-digital-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/woox99/kaimuki-digital-site/issues"
+  },
+  "homepage": "https://github.com/woox99/kaimuki-digital-site#readme"
 }
